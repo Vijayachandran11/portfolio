@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vijayachandran – AI/ML and Data Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E8EDF2;--ink:#0E1A2B;--mute:#4B5B70;--line:#B9C4D0;--acc:#2442D9;--ok:#0B7A57;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1522;--ink:#E6EDF5;--mute:#93A3B7;--line:#2A3A50;--acc:#7F9BFF;--ok:#4FD1A1;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0C1522;--ink:#E6EDF5;--mute:#93A3B7;--line:#2A3A50;--acc:#7F9BFF;--ok:#4FD1A1;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;margin:0;line-height:1.05;letter-spacing:-.02em}
+a{color:var(--acc);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:72px 0 64px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+h1{font-size:clamp(48px,9vw,104px);font-weight:700}
+.role{font-size:20px;color:var(--mute);margin:20px 0 28px;max-width:30ch}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border:2px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:500;border-radius:4px}
+.btn.p{background:var(--ink);color:var(--bg)}
+.plan{font-size:15px;border-left:2px solid var(--ink);padding-left:20px}
+.plan .goal{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:20px;line-height:1.25;margin-bottom:14px}
+.plan ul{list-style:none;margin:0;padding:0 0 0 18px;border-left:1px solid var(--line)}
+.plan li{position:relative;padding:5px 0 5px 22px;display:flex;gap:10px;align-items:baseline}
+.plan li::before{content:"";position:absolute;left:0;top:19px;width:16px;border-top:1px solid var(--line)}
+.plan .st{font-size:13px;color:var(--mute);white-space:nowrap;margin-left:auto}
+.plan li.done .st{color:var(--ok)}
+.plan li .tick{opacity:0}
+@media(prefers-reduced-motion:no-preference){.plan li .tick{animation:tick .3s forwards;animation-delay:calc(.5s + var(--i)*.45s)}}
+@media(prefers-reduced-motion:reduce){.plan li .tick{opacity:1}}
+@keyframes tick{to{opacity:1}}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap{display:grid;grid-template-columns:200px 1fr;gap:40px}
+h2{font-size:28px}
+.row{padding:0 0 32px}
+.row+.row{padding-top:32px;border-top:1px solid var(--line)}
+.row h3{font-size:24px;margin-bottom:8px}
+.tags{color:var(--mute);font-size:15px;margin:10px 0 0}
+.row p{margin:0;max-width:62ch}
+dl{margin:0;display:grid;grid-template-columns:160px 1fr;gap:12px 24px}
+dt{font-weight:500}dd{margin:0;color:var(--mute)}
+footer{padding:48px 0 64px;border-top:1px solid var(--line);color:var(--mute);font-size:15px}
+@media(max-width:760px){header.hero{grid-template-columns:1fr;padding:48px 0}section>.wrap{grid-template-columns:1fr;gap:20px}dl{grid-template-columns:1fr;gap:2px}dt{margin-top:10px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <div>
+    <h1>Vijayachandran</h1>
+    <p class="role">M.Tech student building AI/ML systems and data pipelines.</p>
+    <div class="btns">
+      <a class="btn p" href="#projects">See projects</a>
+      <a class="btn" href="https://github.com/Vijayachandran11" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <div class="plan" aria-label="Career plan">
+    <div class="goal">Goal: first full-time role in AI/ML, data or software engineering</div>
+    <ul>
+      <li class="done" style="--i:0"><span>Learn the stack: Python, TypeScript, SQL</span><span class="st tick">done</span></li>
+      <li class="done" style="--i:1"><span>Build a planning system with an LLM</span><span class="st tick">done</span></li>
+      <li class="done" style="--i:2"><span>Ship a recruitment platform frontend</span><span class="st tick">done</span></li>
+      <li class="done" style="--i:3"><span>Deploy on AWS during an internship</span><span class="st tick">done</span></li>
+      <li style="--i:4"><span>Join a team</span><span class="st tick">open</span></li>
+    </ul>
+  </div>
+</header>
+</div>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div>
+    <div class="row">
+      <h3>Hierarchical Task Planning</h3>
+      <p>A natural-language planning system that breaks instructions into structured task plans using SC-LTL and Mistral 7B.</p>
+      <p class="tags">Python, Mistral 7B, SC-LTL</p>
+    </div>
+    <div class="row">
+      <h3>QuantumHire</h3>
+      <p>A recruitment platform built with React and TypeScript. I wrote the employer page, which has canvas animations, scroll-reveal effects and a controlled form.</p>
+      <p class="tags">React, TypeScript</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <div class="row">
+    <h3>Data Practice Intern, Method Hub</h3>
+    <p>Set up local environments and databases, kept Prisma schemas in sync, deployed to AWS EC2, tested software by hand, and built frontend work for QuantumHire. I also documented the EC2 deployment process as step-by-step guides.</p>
+    <p class="tags">AWS EC2, Prisma, PostgreSQL, Node.js, React</p>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <dl>
+    <dt>Languages</dt><dd>Python, Java, JavaScript, TypeScript, SQL</dd>
+    <dt>Web</dt><dd>React, Next.js, Node.js, Prisma ORM</dd>
+    <dt>Databases</dt><dd>PostgreSQL, MySQL</dd>
+    <dt>Cloud</dt><dd>AWS EC2</dd>
+    <dt>AI/ML</dt><dd>LLM tooling, including Mistral 7B</dd>
+  </dl>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <h2>Education</h2>
+  <div>
+    <h3>M.Tech, Information Technology</h3>
+    <p style="margin:8px 0 0;color:var(--mute)">Anna University, Guindy, 2024–2026</p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  Find my code at <a href="https://github.com/Vijayachandran11" rel="noopener">github.com/Vijayachandran11</a>.
+</div></footer>
+</body>
+</html>
